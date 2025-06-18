@@ -1,0 +1,13 @@
+function openWindow(id) {
+  document.getElementById(id).style.display = 'flex';
+}
+
+function closeWindow(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+// Clock
+setInterval(() => {
+  const now = new Date();
+  document.getElementById("time").innerText = now.toLocaleTimeString();
+}, 1000);
