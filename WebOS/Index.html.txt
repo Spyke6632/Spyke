@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ankita & Riya OS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="desktop">
+    <div class="taskbar">❤️ Ankita & Riya OS | <span id="time"></span></div>
+
+    <div class="icon" onclick="openWindow('note')">📝 Love Note</div>
+    <div class="icon" onclick="openWindow('quote')">💬 Quotes</div>
+    <div class="icon" onclick="openWindow('music')">🎵 Music</div>
+
+    <!-- Love Note Window -->
+    <div id="note" class="window">
+      <div class="titlebar">Love Note <span onclick="closeWindow('note')">×</span></div>
+      <div class="content">
+        Dear Ankita,<br><br>
+        Every moment with you is a memory I cherish. You are the melody in my life, and with you, every day feels like a dream.<br><br>
+        Forever yours,<br>
+        Riya 💖
+      </div>
+    </div>
+
+    <!-- Quotes Window -->
+    <div id="quote" class="window">
+      <div class="titlebar">Sweet Quotes <span onclick="closeWindow('quote')">×</span></div>
+      <div class="content">
+        <ul>
+          <li>"You stole my heart, but I’ll let you keep it forever."</li>
+          <li>"Every time I see you smile, my day becomes brighter."</li>
+          <li>"Falling in love with you was the best kind of gravity."</li>
+          <li>"You’re the kind of magic that doesn’t need a wand."</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Music Player -->
+    <div id="music" class="window">
+      <div class="titlebar">Ed Sheeran - Perfect <span onclick="closeWindow('music')">×</span></div>
+      <div class="content">
+        <audio controls autoplay loop>
+          <source src="perfect.mp3" type="audio/mpeg" />
+          Your browser does not support the audio tag.
+        </audio>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
